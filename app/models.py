@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, Date, DateTime, JSON
+from sqlalchemy import Column, Integer, String, Text, Date, DateTime, JSON, Numeric
 from sqlalchemy.sql import func
 from app.database import Base
 
@@ -21,21 +21,20 @@ class Organization(Base):
     __tablename__ = "organizations"
     
     id = Column(Integer, primary_key=True, index=True)
-    business_name = Column(String, nullable=False, index=True)  # Business Name*
-    business_stage = Column(String, nullable=False)  # Business Stage*: Idea, Early Stage, Growing Business, Established Business
-    description = Column(Text, nullable=False)  # Description*
-    industry = Column(String, nullable=False, index=True)  # Industry*
-    business_sector = Column(String)  # Business Sector (dropdown)
-    business_location = Column(String, nullable=False)  # Business Location*
-    legal_structure = Column(String, nullable=False)  # Legal Structure*: Sole Proprietorship, Partnership, Corporation, LLC, Non-Profit, Other
-    business_status = Column(String, nullable=False)  # Business Status*: Active, Inactive, Pending, On Hold
-    website = Column(String)  # Website (optional)
-    email = Column(String, nullable=False)  # Email*
-    phone_number = Column(String, nullable=False)  # Phone Number*
-    social_media = Column(JSON)  # Social Media: LinkedIn, Twitter/X, Facebook, Instagram, YouTube, TikTok, Pinterest
-    additional_contact_info = Column(Text)  # Additional Contact Info
+    organization_name = Column(Text, index=True)
+    city = Column(String(100))
+    address = Column(Text)
+    latitude = Column(Numeric(9, 6))
+    longitude = Column(Numeric(9, 6))
+    province_state = Column(String(50))
+    sector_type = Column(String(200))
+    services_offered = Column(Text)
+    website = Column(Text)
+    email_address = Column(Text)
+    phone_number = Column(String(50))
+    contact_name = Column(Text)
+    notes = Column(Text)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
 class Pathway(Base):
     __tablename__ = "pathways"
