@@ -7,3 +7,6 @@ alembic revision --autogenerate -m "Initial migration"
 echo "✅ Migration created!"
 echo "Run 'alembic upgrade head' to apply migrations"
 
+
+
+

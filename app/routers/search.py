@@ -22,3 +22,6 @@ async def get_search_logs(db: Session = Depends(get_db)):
     logs = db.query(SearchLog).order_by(SearchLog.created_at.desc()).all()
     return logs
 
+
+
+

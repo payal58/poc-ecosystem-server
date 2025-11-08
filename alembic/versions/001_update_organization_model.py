@@ -75,3 +75,6 @@ def downgrade() -> None:
     op.alter_column('organizations', 'category', nullable=True)
     op.alter_column('organizations', 'contact_email', nullable=True)
 
+
+
+

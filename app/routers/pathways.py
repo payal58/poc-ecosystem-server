@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 from app.database import get_db
-from app.models import Pathway
+from app.models import Pathway, Organization, Event
 from app.schemas import (
     PathwayCreate,
     PathwayUpdate,
@@ -10,6 +10,7 @@ from app.schemas import (
     PathwayQuery,
     PathwayQueryResponse
 )
+from app.services.gemini_service import get_gemini_response
 
 router = APIRouter()
 
@@ -44,32 +45,57 @@ async def query_pathway(
     query: PathwayQuery,
     db: Session = Depends(get_db)
 ):
-    """Submit pathway responses and get recommendations"""
-    # Get all pathways
-    pathways = db.query(Pathway).all()
-    
-    # Simple matching logic: find pathways that match the responses
-    recommendations = []
-    
-    for pathway in pathways:
-        if pathway.recommended_resources:
-            # Check if any response matches the pathway
-            matches = False
-            if pathway.answer_options:
-                for key, value in query.responses.items():
-                    if key in pathway.answer_options:
-                        if str(value) == str(pathway.answer_options[key]):
-                            matches = True
-                            break
-            
-            if matches or not pathway.answer_options:
-                recommendations.append({
-                    "pathway_id": pathway.id,
-                    "question": pathway.question,
-                    "resources": pathway.recommended_resources
-                })
-    
-    return PathwayQueryResponse(recommendations=recommendations)
+    """Submit pathway responses and get AI-powered recommendations from Gemini"""
+    try:
+        # Get all database data
+        pathways = db.query(Pathway).all()
+        organizations = db.query(Organization).all()
+        events = db.query(Event).all()
+        
+        # Get Gemini AI response
+        ai_response = get_gemini_response(
+            user_responses=query.responses,
+            pathways=pathways,
+            organizations=organizations,
+            events=events
+        )
+        
+        # Format response
+        recommendations = [{
+            "type": "ai_recommendation",
+            "content": ai_response,
+            "source": "gemini_ai"
+        }]
+        
+        return PathwayQueryResponse(recommendations=recommendations)
+    except ValueError as e:
+        # If Gemini API key is not set, fall back to simple matching
+        pathways = db.query(Pathway).all()
+        recommendations = []
+        
+        for pathway in pathways:
+            if pathway.recommended_resources:
+                matches = False
+                if pathway.answer_options:
+                    for key, value in query.responses.items():
+                        if key in pathway.answer_options:
+                            if str(value) == str(pathway.answer_options[key]):
+                                matches = True
+                                break
+                
+                if matches or not pathway.answer_options:
+                    recommendations.append({
+                        "pathway_id": pathway.id,
+                        "question": pathway.question,
+                        "resources": pathway.recommended_resources
+                    })
+        
+        return PathwayQueryResponse(recommendations=recommendations)
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error generating recommendations: {str(e)}"
+        )
 
 @router.put("/{pathway_id}", response_model=PathwayResponse)
 async def update_pathway(
