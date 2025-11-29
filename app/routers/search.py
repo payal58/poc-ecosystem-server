@@ -25,3 +25,4 @@ async def get_search_logs(db: Session = Depends(get_db)):
 
 
 
+

@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 from app.database import get_db
-from app.models import Pathway, Organization, Event
+from app.models import Pathway, Organization, Event, Program
 from app.schemas import (
     PathwayCreate,
     PathwayUpdate,
@@ -51,13 +51,15 @@ async def query_pathway(
         pathways = db.query(Pathway).all()
         organizations = db.query(Organization).all()
         events = db.query(Event).all()
+        programs = db.query(Program).filter(Program.is_active == True).all()
         
         # Get Gemini AI response
         ai_response = get_gemini_response(
             user_responses=query.responses,
             pathways=pathways,
             organizations=organizations,
-            events=events
+            events=events,
+            programs=programs
         )
         
         # Format response

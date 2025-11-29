@@ -77,3 +77,4 @@ def downgrade() -> None:
     op.add_column('organizations', sa.Column('additional_contact_info', sa.Text(), nullable=True))
     op.add_column('organizations', sa.Column('updated_at', sa.DateTime(timezone=True), nullable=True))
 
+

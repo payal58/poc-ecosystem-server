@@ -1,0 +1,411 @@
+2025-11-12 15:01:23,646 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:01:25,669 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:01:27,175 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:01:27,523 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:01:27,524 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:01:29,028 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:01:29,879 - INFO - Found 1 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:01:31,387 - INFO - Saved 1 programs to backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:01:31,388 - INFO - Saved 1 programs to backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:01:51,748 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:01:52,622 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:01:54,127 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:01:54,451 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:01:54,451 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:01:55,957 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:01:56,897 - INFO - Found 1 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:01:58,403 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:03:10,964 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 54] Connection reset by peer>
+2025-11-12 15:03:11,957 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:03:13,462 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:03:14,100 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:03:14,101 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:03:15,604 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:03:27,750 - INFO - Found 3 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:03:29,255 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:03:30,132 - INFO - Found 2 programs from Hackforge
+2025-11-12 15:03:31,637 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:03:34,170 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:03:35,675 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:03:37,314 - INFO - Found 1 programs from Automate Canada
+2025-11-12 15:03:38,820 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 15:03:58,726 - WARNING - Scraping not allowed by robots.txt for https://www.camm.ca/
+2025-11-12 15:03:58,726 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 15:04:00,234 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:04:00,235 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:04:23,027 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:04:23,554 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:04:25,059 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:04:25,300 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:04:25,300 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:04:26,804 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:04:27,425 - INFO - Found 1 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:04:28,930 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:05:32,417 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 54] Connection reset by peer>
+2025-11-12 15:05:47,469 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:05:47,470 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:05:48,975 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:05:49,162 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:05:49,162 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:05:50,668 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:06:03,863 - INFO - Found 3 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:06:05,369 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:06:06,286 - INFO - Found 2 programs from Hackforge
+2025-11-12 15:06:07,791 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:06:10,020 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:06:11,521 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:06:14,423 - INFO - Found 1 programs from Automate Canada
+2025-11-12 15:06:15,929 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 15:06:50,942 - ERROR - Error fetching https://www.camm.ca/: HTTPSConnectionPool(host='www.camm.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:06:50,942 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 15:06:52,449 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:06:52,451 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:07:21,821 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:07:22,358 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:07:23,864 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:07:24,085 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:07:24,085 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:07:25,591 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:07:26,148 - INFO - Found 1 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:07:27,654 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:08:12,691 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:08:27,746 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:08:27,746 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:08:29,251 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:08:29,426 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:08:29,426 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:08:30,931 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:08:40,816 - INFO - Found 3 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:08:42,321 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:08:43,049 - INFO - Found 2 programs from Hackforge
+2025-11-12 15:08:44,554 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:09:00,623 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:09:02,128 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:09:03,015 - INFO - Found 1 programs from Automate Canada
+2025-11-12 15:09:04,521 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 15:09:24,149 - WARNING - Scraping not allowed by robots.txt for https://www.camm.ca/
+2025-11-12 15:09:24,150 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 15:09:25,658 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:09:25,659 - INFO - Saved 7 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:09:41,667 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:09:42,428 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:09:43,933 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:09:44,205 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:09:44,205 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:09:45,711 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:09:46,235 - INFO - Found 0 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:09:47,740 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:10:38,513 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:10:53,586 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:10:53,586 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:10:55,091 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:10:55,300 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:10:55,300 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:10:56,804 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:11:10,143 - INFO - Found 0 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:11:11,648 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:11:12,651 - INFO - Found 0 programs from Hackforge
+2025-11-12 15:11:14,157 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:11:16,765 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:11:18,271 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:11:19,498 - INFO - Found 0 programs from Automate Canada
+2025-11-12 15:11:21,003 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 15:11:56,175 - ERROR - Error fetching https://www.camm.ca/: HTTPSConnectionPool(host='www.camm.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:11:56,177 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 15:11:57,679 - INFO - Scraping programs from University of Windsor’s Centre for Automotive Research (CAR) (https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education)
+2025-11-12 15:12:55,311 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:13:10,432 - ERROR - Error fetching https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:13:10,433 - INFO - Found 0 programs from University of Windsor’s Centre for Automotive Research (CAR)
+2025-11-12 15:13:11,935 - INFO - Scraping programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER) (https://www.uwindsor.ca/glier/)
+2025-11-12 15:14:33,002 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/glier/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:14:48,092 - ERROR - Error fetching https://www.uwindsor.ca/glier/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:14:48,092 - INFO - Found 0 programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER)
+2025-11-12 15:14:49,598 - INFO - Scraping programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR) (https://www.uwindsor.ca/idir/)
+2025-11-12 15:16:00,206 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/idir/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:16:15,266 - ERROR - Error fetching https://www.uwindsor.ca/idir/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:16:15,267 - INFO - Found 0 programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR)
+2025-11-12 15:16:16,772 - INFO - Scraping programs from Ontario Tourism Innovation Lab (https://www.tourisminnovation.ca/)
+2025-11-12 15:16:17,649 - INFO - Found 0 programs from Ontario Tourism Innovation Lab
+2025-11-12 15:16:19,154 - INFO - Scraping programs from Windsor Essex Capital Angel Network (WECAN) (https://weangelnetwork.com/)
+2025-11-12 15:16:21,402 - INFO - Found 1 programs from Windsor Essex Capital Angel Network (WECAN)
+2025-11-12 15:16:22,911 - INFO - Saved 1 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:16:22,912 - INFO - Saved 1 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:17:12,917 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:17:13,419 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:17:14,425 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:17:14,728 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:17:14,728 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:17:15,733 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:17:16,189 - INFO - Found 0 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:17:17,194 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:18:04,369 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:18:19,431 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:18:19,432 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:18:20,433 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:18:20,668 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:18:20,668 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:18:21,673 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:18:31,703 - INFO - Found 0 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:18:32,708 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:18:33,916 - INFO - Found 0 programs from Hackforge
+2025-11-12 15:18:34,922 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:18:37,532 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:18:38,538 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:18:41,098 - INFO - Found 0 programs from Automate Canada
+2025-11-12 15:18:42,111 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 15:19:01,787 - WARNING - Scraping not allowed by robots.txt for https://www.camm.ca/
+2025-11-12 15:19:01,789 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 15:19:02,794 - INFO - Scraping programs from University of Windsor’s Centre for Automotive Research (CAR) (https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education)
+2025-11-12 15:20:03,988 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:20:19,075 - ERROR - Error fetching https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:20:19,076 - INFO - Found 0 programs from University of Windsor’s Centre for Automotive Research (CAR)
+2025-11-12 15:20:20,079 - INFO - Scraping programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER) (https://www.uwindsor.ca/glier/)
+2025-11-12 15:21:17,610 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/glier/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:21:32,669 - ERROR - Error fetching https://www.uwindsor.ca/glier/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:21:32,669 - INFO - Found 0 programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER)
+2025-11-12 15:21:33,673 - INFO - Scraping programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR) (https://www.uwindsor.ca/idir/)
+2025-11-12 15:23:24,504 - WARNING - Could not check robots.txt for https://www.uwindsor.ca/idir/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:23:39,575 - ERROR - Error fetching https://www.uwindsor.ca/idir/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:23:39,576 - INFO - Found 0 programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR)
+2025-11-12 15:23:40,582 - INFO - Scraping programs from Ontario Tourism Innovation Lab (https://www.tourisminnovation.ca/)
+2025-11-12 15:23:41,277 - INFO - Found 0 programs from Ontario Tourism Innovation Lab
+2025-11-12 15:23:42,283 - INFO - Scraping programs from Windsor Essex Capital Angel Network (WECAN) (https://weangelnetwork.com/)
+2025-11-12 15:23:44,649 - INFO - Found 1 programs from Windsor Essex Capital Angel Network (WECAN)
+2025-11-12 15:23:45,655 - INFO - Scraping programs from BDC Capital (https://www.bdc.ca/en/bdc-capital)
+2025-11-12 15:23:45,997 - WARNING - Scraping not allowed by robots.txt for https://www.bdc.ca/en/bdc-capital
+2025-11-12 15:23:45,998 - INFO - Found 0 programs from BDC Capital
+2025-11-12 15:23:47,003 - INFO - Scraping programs from Google Developer Group - Windsor (https://gdg.community.dev/gdg-windsor/)
+2025-11-12 15:24:25,903 - WARNING - Could not check robots.txt for https://gdg.community.dev/gdg-windsor/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:24:40,956 - ERROR - Error fetching https://gdg.community.dev/gdg-windsor/: HTTPSConnectionPool(host='gdg.community.dev', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:24:40,956 - INFO - Found 0 programs from Google Developer Group - Windsor
+2025-11-12 15:24:41,966 - INFO - Saved 1 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:24:41,968 - INFO - Saved 1 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.csv
+2025-11-12 15:29:43,504 - INFO - Scraping programs from SCORE Ann Arbor (https://www.score.org/annarborarea)
+2025-11-12 15:29:45,919 - INFO - Found 0 programs from SCORE Ann Arbor
+2025-11-12 15:29:46,925 - INFO - Scraping programs from University of Michigan's Innovation Partnerships (https://innovationpartnerships.umich.edu/)
+2025-11-12 15:29:47,209 - WARNING - Scraping not allowed by robots.txt for https://innovationpartnerships.umich.edu/
+2025-11-12 15:29:47,210 - INFO - Found 0 programs from University of Michigan's Innovation Partnerships
+2025-11-12 15:29:48,214 - INFO - Scraping programs from Arboretum Ventures (https://www.arboretumvc.com/)
+2025-11-12 15:29:48,576 - WARNING - Scraping not allowed by robots.txt for https://www.arboretumvc.com/
+2025-11-12 15:29:48,576 - INFO - Found 0 programs from Arboretum Ventures
+2025-11-12 15:29:49,581 - INFO - Scraping programs from University of Michigan's Life Sciences Institute (https://www.lsi.umich.edu/)
+2025-11-12 15:29:49,898 - WARNING - Scraping not allowed by robots.txt for https://www.lsi.umich.edu/
+2025-11-12 15:29:49,899 - INFO - Found 0 programs from University of Michigan's Life Sciences Institute
+2025-11-12 15:29:50,902 - INFO - Scraping programs from University of Michigan's M-City (https://mcity.umich.edu/)
+2025-11-12 15:29:51,265 - WARNING - Scraping not allowed by robots.txt for https://mcity.umich.edu/
+2025-11-12 15:29:51,265 - INFO - Found 0 programs from University of Michigan's M-City
+2025-11-12 15:29:52,266 - INFO - Scraping programs from National Center for Manufacturing Sciences (NCMS) (https://www.ncms.org/)
+2025-11-12 15:29:53,932 - INFO - Found 0 programs from National Center for Manufacturing Sciences (NCMS)
+2025-11-12 15:29:54,937 - INFO - Scraping programs from MichiganRise (https://www.michiganrise.org/)
+2025-11-12 15:30:03,028 - INFO - Found 0 programs from MichiganRise
+2025-11-12 15:30:04,033 - INFO - Scraping programs from Ann Arbor SPARK (https://annarborusa.org/)
+2025-11-12 15:30:04,425 - WARNING - Scraping not allowed by robots.txt for https://annarborusa.org/
+2025-11-12 15:30:04,426 - INFO - Found 0 programs from Ann Arbor SPARK
+2025-11-12 15:30:05,431 - INFO - Scraping programs from Amherst Fund (http://www.amherstfund.com/)
+2025-11-12 15:30:11,745 - INFO - Found 0 programs from Amherst Fund
+2025-11-12 15:30:12,750 - INFO - Scraping programs from Therapeutic Systems Research Laboratories (TSRL), Inc. (https://www.tsrlinc.com/)
+2025-11-12 15:30:13,475 - INFO - Found 0 programs from Therapeutic Systems Research Laboratories (TSRL), Inc.
+2025-11-12 15:30:14,481 - INFO - Scraping programs from Desai Accelerator (https://desaiaccelerator.umich.edu/)
+2025-11-12 15:30:15,615 - INFO - Found 0 programs from Desai Accelerator
+2025-11-12 15:30:16,618 - INFO - Scraping programs from Merit Network (https://www.merit.edu/)
+2025-11-12 15:30:16,925 - WARNING - Scraping not allowed by robots.txt for https://www.merit.edu/
+2025-11-12 15:30:16,927 - INFO - Found 0 programs from Merit Network
+2025-11-12 15:30:17,932 - INFO - Scraping programs from Birmingham Angels (https://birminghamangels.org/)
+2025-11-12 15:30:19,614 - INFO - Found 0 programs from Birmingham Angels
+2025-11-12 15:30:20,619 - INFO - Scraping programs from Michigan Venture Capital Association (MVCA) (https://michiganvca.org/)
+2025-11-12 15:30:22,478 - INFO - Found 0 programs from Michigan Venture Capital Association (MVCA)
+2025-11-12 15:30:23,483 - INFO - Scraping programs from PROTO Accelerator (https://www.protoaccelerator.com/)
+2025-11-12 15:30:24,011 - INFO - Found 0 programs from PROTO Accelerator
+2025-11-12 15:30:25,016 - INFO - Scraping programs from Detroit Regional Partnership (https://www.detroitregionalpartnership.com/)
+2025-11-12 15:30:25,331 - WARNING - Scraping not allowed by robots.txt for https://www.detroitregionalpartnership.com/
+2025-11-12 15:30:25,332 - INFO - Found 0 programs from Detroit Regional Partnership
+2025-11-12 15:30:26,337 - INFO - Scraping programs from LIFT Tech (https://lift.technology/)
+2025-11-12 15:30:26,679 - WARNING - Scraping not allowed by robots.txt for https://lift.technology/
+2025-11-12 15:30:26,679 - INFO - Found 0 programs from LIFT Tech
+2025-11-12 15:30:27,680 - INFO - Scraping programs from TechStars Detroit (https://www.techstars.com/accelerators)
+2025-11-12 15:30:58,683 - WARNING - Could not check robots.txt for https://www.techstars.com/accelerators: <urlopen error [Errno 54] Connection reset by peer>
+2025-11-12 15:31:13,747 - ERROR - Error fetching https://www.techstars.com/accelerators: HTTPSConnectionPool(host='www.techstars.com', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:31:13,748 - INFO - Found 0 programs from TechStars Detroit
+2025-11-12 15:31:14,751 - INFO - Scraping programs from Urban Tech Xchange (UTX) (https://urbantechxchange.com/)
+2025-11-12 15:31:15,036 - WARNING - Scraping not allowed by robots.txt for https://urbantechxchange.com/
+2025-11-12 15:31:15,036 - INFO - Found 0 programs from Urban Tech Xchange (UTX)
+2025-11-12 15:31:16,041 - INFO - Scraping programs from Rockbridge Growth Equity (https://www.rbequity.com/)
+2025-11-12 15:31:16,474 - WARNING - Scraping not allowed by robots.txt for https://www.rbequity.com/
+2025-11-12 15:31:16,474 - INFO - Found 0 programs from Rockbridge Growth Equity
+2025-11-12 15:31:17,482 - INFO - Saved 0 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:31:17,482 - WARNING - No programs to save
+2025-11-12 15:35:46,260 - INFO - Loaded 18 organizations from Windsor/Essex
+2025-11-12 15:35:46,263 - INFO - Scraping programs from Essex Community Futures Development Corporation (https://cfessexcounty.ca/)
+2025-11-12 15:35:46,534 - WARNING - Scraping not allowed by robots.txt for https://cfessexcounty.ca/
+2025-11-12 15:35:46,535 - INFO - Found 0 programs from Essex Community Futures Development Corporation
+2025-11-12 15:35:47,540 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 15:35:48,135 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 15:35:49,141 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 15:35:49,338 - WARNING - Scraping not allowed by robots.txt for https://www.webusinesscentre.com/
+2025-11-12 15:35:49,338 - INFO - Found 0 programs from Small Business & Entrepreneurship Centre
+2025-11-12 15:35:50,340 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 15:35:50,829 - INFO - Found 0 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 15:35:51,834 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 15:36:34,260 - WARNING - Could not check robots.txt for https://www.apma.ca/: <urlopen error [Errno 60] Operation timed out>
+2025-11-12 15:36:49,320 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=15)
+2025-11-12 15:36:49,321 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 15:36:50,324 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 15:36:50,634 - WARNING - Scraping not allowed by robots.txt for https://wetech-alliance.com/
+2025-11-12 15:36:50,634 - INFO - Found 0 programs from WEtech Alliance
+2025-11-12 15:36:51,640 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 15:36:59,254 - INFO - Found 0 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 15:37:00,260 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 15:37:01,399 - INFO - Found 0 programs from Hackforge
+2025-11-12 15:37:02,404 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 15:37:04,980 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 15:37:05,986 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 15:37:06,957 - INFO - Found 0 programs from Automate Canada
+2025-11-12 15:37:07,965 - INFO - Saved 0 programs to /Users/payal/Desktop/Innovation POC/backend/scraper/backend/scraper/scraped_programs.json
+2025-11-12 15:37:07,966 - WARNING - No programs to save
+2025-11-12 15:37:20,375 - INFO - Loaded 18 organizations from Windsor/Essex
+2025-11-12 15:59:25,198 - WARNING - No program containers found on https://www.webusinesscentre.com/programs using selector: article, .program, .event, .initiative, .service, .program-card, .event-card
+2025-11-12 16:00:20,196 - INFO - Found 3 program containers on https://www.webusinesscentre.com
+2025-11-12 16:00:20,207 - INFO - Cleaned 3 programs from 3 raw records
+2025-11-12 16:05:49,854 - INFO - ============================================================
+2025-11-12 16:05:49,854 - INFO - PHASE 1: SCRAPING
+2025-11-12 16:05:49,854 - INFO - ============================================================
+2025-11-12 16:05:49,854 - INFO - Scraping all organizations from database...
+2025-11-12 16:05:51,091 - INFO - Scraping programs from Invest WindsorEssex (https://www.investwindsoressex.com/)
+2025-11-12 16:05:51,639 - WARNING - No program containers found on https://www.investwindsoressex.com/ using selector: article, .program, .event, .initiative, .service, .program-card, .event-card
+2025-11-12 16:05:51,639 - INFO - Found 0 programs from Invest WindsorEssex
+2025-11-12 16:05:52,645 - INFO - Scraping programs from Small Business & Entrepreneurship Centre (https://www.webusinesscentre.com/)
+2025-11-12 16:05:52,985 - INFO - Found 3 program containers on https://www.webusinesscentre.com/
+2025-11-12 16:05:52,989 - INFO - Found 3 programs from Small Business & Entrepreneurship Centre
+2025-11-12 16:05:53,995 - INFO - Scraping programs from St. Clair College Centre for Applied Research and Innovation (CARI) (https://www.stclairresearch.ca/)
+2025-11-12 16:05:54,352 - INFO - Found 22 program containers on https://www.stclairresearch.ca/
+2025-11-12 16:05:54,407 - INFO - Found 1 programs from St. Clair College Centre for Applied Research and Innovation (CARI)
+2025-11-12 16:05:55,412 - INFO - Scraping programs from Automotive Parts Manufacturers' Association (APMA) (https://www.apma.ca/)
+2025-11-12 16:06:25,542 - ERROR - Error fetching https://www.apma.ca/: HTTPSConnectionPool(host='www.apma.ca', port=443): Read timed out. (read timeout=30)
+2025-11-12 16:06:25,543 - WARNING - Could not fetch https://www.apma.ca/
+2025-11-12 16:06:25,543 - INFO - Found 0 programs from Automotive Parts Manufacturers' Association (APMA)
+2025-11-12 16:06:26,548 - INFO - Scraping programs from WEtech Alliance (https://wetech-alliance.com/)
+2025-11-12 16:06:27,347 - INFO - Found 17 program containers on https://wetech-alliance.com/
+2025-11-12 16:06:27,366 - INFO - Found 17 programs from WEtech Alliance
+2025-11-12 16:06:28,372 - INFO - Scraping programs from Windsor-Essex Regional Chamber of Commerce (https://wechamber.org/)
+2025-11-12 16:06:32,297 - INFO - Found 9 program containers on https://wechamber.org/
+2025-11-12 16:06:32,303 - INFO - Found 3 programs from Windsor-Essex Regional Chamber of Commerce
+2025-11-12 16:06:33,308 - INFO - Scraping programs from Hackforge (https://www.hackf.org/)
+2025-11-12 16:06:34,335 - INFO - Found 2 program containers on https://www.hackf.org/
+2025-11-12 16:06:34,344 - INFO - Found 2 programs from Hackforge
+2025-11-12 16:06:35,350 - INFO - Scraping programs from Workforce Windsor Essex (https://workforcewindsoressex.com/)
+2025-11-12 16:06:37,815 - WARNING - No program containers found on https://workforcewindsoressex.com/ using selector: article, .program, .event, .initiative, .service, .program-card, .event-card
+2025-11-12 16:06:37,815 - INFO - Found 0 programs from Workforce Windsor Essex
+2025-11-12 16:06:38,820 - INFO - Scraping programs from Automate Canada (https://www.automatecanada.com/)
+2025-11-12 16:06:39,896 - INFO - Found 1 program containers on https://www.automatecanada.com/
+2025-11-12 16:06:39,901 - INFO - Found 1 programs from Automate Canada
+2025-11-12 16:06:40,906 - INFO - Scraping programs from Canadian Association of Moldmakers (CAMM) (https://www.camm.ca/)
+2025-11-12 16:07:00,795 - ERROR - Error fetching https://www.camm.ca/: 522 Server Error: <none> for url: https://www.camm.ca/
+2025-11-12 16:07:00,796 - WARNING - Could not fetch https://www.camm.ca/
+2025-11-12 16:07:00,796 - INFO - Found 0 programs from Canadian Association of Moldmakers (CAMM)
+2025-11-12 16:07:01,798 - INFO - Scraping programs from University of Windsor’s Centre for Automotive Research (CAR) (https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education)
+2025-11-12 16:07:31,862 - ERROR - Error fetching https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=30)
+2025-11-12 16:07:31,862 - WARNING - Could not fetch https://www.uwindsor.ca/engineering/research/422/centre-automotive-research-and-education
+2025-11-12 16:07:31,862 - INFO - Found 0 programs from University of Windsor’s Centre for Automotive Research (CAR)
+2025-11-12 16:07:32,867 - INFO - Scraping programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER) (https://www.uwindsor.ca/glier/)
+2025-11-12 16:08:02,931 - ERROR - Error fetching https://www.uwindsor.ca/glier/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=30)
+2025-11-12 16:08:02,932 - WARNING - Could not fetch https://www.uwindsor.ca/glier/
+2025-11-12 16:08:02,932 - INFO - Found 0 programs from University of Windsor’s Great Lakes Institute for Environmental Research (GLIER)
+2025-11-12 16:08:03,935 - INFO - Scraping programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR) (https://www.uwindsor.ca/idir/)
+2025-11-12 16:08:34,005 - ERROR - Error fetching https://www.uwindsor.ca/idir/: HTTPSConnectionPool(host='www.uwindsor.ca', port=443): Read timed out. (read timeout=30)
+2025-11-12 16:08:34,006 - WARNING - Could not fetch https://www.uwindsor.ca/idir/
+2025-11-12 16:08:34,006 - INFO - Found 0 programs from University of Windsor’s Institute for Diagnostic Imaging Research (IDIR)
+2025-11-12 16:08:35,010 - INFO - Scraping programs from Ontario Tourism Innovation Lab (https://www.tourisminnovation.ca/)
+2025-11-12 16:08:35,573 - WARNING - No program containers found on https://www.tourisminnovation.ca/ using selector: article, .program, .event, .initiative, .service, .program-card, .event-card
+2025-11-12 16:08:35,573 - INFO - Found 0 programs from Ontario Tourism Innovation Lab
+2025-11-12 16:08:36,578 - INFO - Scraping programs from Windsor Essex Capital Angel Network (WECAN) (https://weangelnetwork.com/)
+2025-11-12 16:08:37,556 - INFO - Found 1 program containers on https://weangelnetwork.com/
+2025-11-12 16:08:37,570 - INFO - Found 1 programs from Windsor Essex Capital Angel Network (WECAN)
+2025-11-12 16:08:38,575 - INFO - Scraping programs from BDC Capital (https://www.bdc.ca/en/bdc-capital)
+2025-11-12 16:08:39,107 - INFO - Found 1 program containers on https://www.bdc.ca/en/bdc-capital
+2025-11-12 16:08:39,112 - INFO - Found 1 programs from BDC Capital
+2025-11-12 16:08:40,117 - INFO - Scraping programs from Google Developer Group - Windsor (https://gdg.community.dev/gdg-windsor/)
+2025-11-12 16:09:10,448 - ERROR - Error fetching https://gdg.community.dev/gdg-windsor/: HTTPSConnectionPool(host='gdg.community.dev', port=443): Read timed out. (read timeout=30)
+2025-11-12 16:09:10,448 - WARNING - Could not fetch https://gdg.community.dev/gdg-windsor/
+2025-11-12 16:09:10,448 - INFO - Found 0 programs from Google Developer Group - Windsor
+2025-11-12 16:09:11,451 - INFO - Scraped 29 programs from all organizations
+2025-11-12 16:09:11,543 - INFO - Saved 29 programs to raw_programs_20251112_160911.json
+2025-11-12 16:09:11,544 - INFO - Saved 29 programs to raw_programs_20251112_160911.csv
+2025-11-12 16:09:11,544 - INFO - ============================================================
+2025-11-12 16:09:11,544 - INFO - PHASE 2: CLEANING & NORMALIZATION
+2025-11-12 16:09:11,544 - INFO - ============================================================
+2025-11-12 16:09:11,559 - INFO - Cleaned 29 programs from 29 raw records
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Tourism Windsor Essex Pelee Island Launches The 7th Annual Holiday Gift Guide': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Ontario Boosting Training for Entrepreneurs': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Ontario Investing $2 Million to Help Young Entrepreneurs Start and Grow Businesses': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Home': Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Plan “Bee” Pivots | How Tech Connect: Haunted Piston Edition Became a Masterclass in Agility': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Hult Prize Launches at UWindsor with New Campus Director Appointment': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Women of WIFF: When Entrepreneurship Takes Centre Stage': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Crossing Borders, Building Futures: Reflections from the Downtown Detroit Partnership Fall Forum': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Windsor-Essex DevFest 2025 to Unite the Region’s Tech Community': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Downtown Detroit Partnership Hosts Fall Forum: Special Edition, featuring binational leaders across Detroit and Windsor, Oct. 15': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'WEtech Alliance provides 12 companies with up to $240,000 through Cohort 4 of Government of Canada-funded i.d.e.a. Fund™': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Powering Sustainable Innovation: Handy Bros’ Journey with WEtech and the i.d.e.a. Fund™': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Annual Impact Report: April 2024 – March 2025': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'A New Chapter of Growth and Innovation': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Welcoming New Leaders to WEtech Alliance’s Board for 2025–2026': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,560 - WARNING - Invalid program 'Scaling Up, Together': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'BIZconneCKt | November Networking event': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Leamington Business After Hours with Frank Abbruzzese': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Unlock Growth & Productivity for Manufacturers': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Inclusive by Design Virtual Workshop': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Building AI Capacity: Overcoming Barriers to Address SME Skills Shortages': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'The Windsor Essex Chamber of Commerce Welcomes Plantscape Windsor as New Affinity Partner': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'The Windsor Essex Chamber of Commerce Welcomes Avis as New Affinity Partner': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program '2025 Business Excellence Awards – Award Recipients': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Contact': Missing required field: location, Invalid URL format: mailto:info@hackf.org
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'What I Learned Building My Own AI Agent: An Evening with Doug Sartori': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Don't miss our industry updates!': Missing required field: description, Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Become An Angel': Missing required field: location
+2025-11-12 16:09:11,561 - WARNING - Invalid program 'Capital': Missing required field: contact_email, Missing required field: location
+2025-11-12 16:09:11,561 - INFO - Cleaned 29 programs
+2025-11-12 16:09:11,561 - INFO -   Valid: 0
+2025-11-12 16:09:11,561 - INFO -   Invalid: 29
+2025-11-12 16:09:11,562 - INFO - Saved 29 programs to cleaned_programs_20251112_160911.json
+2025-11-12 16:09:11,563 - INFO - Saved 29 programs to cleaned_programs_20251112_160911.csv
+2025-11-12 16:09:11,563 - INFO - ✅ Pipeline complete (upload skipped)
+2025-11-12 16:09:11,563 - INFO - Cleaned data saved to cleaned_programs_20251112_160911.json
+2025-11-12 16:09:40,194 - INFO - Loading cleaned programs from cleaned_programs_20251112_160911.json
+2025-11-12 16:09:40,195 - INFO - ============================================================
+2025-11-12 16:09:40,195 - INFO - PHASE 3: UPLOADING TO BACKEND
+2025-11-12 16:09:40,195 - INFO - ============================================================
+2025-11-12 16:09:40,195 - INFO - Uploading program 1/29: Tourism Windsor Essex Pelee Island Launches The 7th Annual Holiday Gift Guide
+2025-11-12 16:09:41,293 - INFO - Uploading program 2/29: Ontario Boosting Training for Entrepreneurs
+2025-11-12 16:09:42,463 - INFO - Uploading program 3/29: Ontario Investing $2 Million to Help Young Entrepreneurs Start and Grow Businesses
+2025-11-12 16:09:43,617 - INFO - Uploading program 4/29: Home
+2025-11-12 16:09:44,718 - INFO - Uploading program 5/29: Plan “Bee” Pivots | How Tech Connect: Haunted Piston Edition Became a Masterclass in Agility
+2025-11-12 16:09:45,856 - INFO - Uploading program 6/29: Hult Prize Launches at UWindsor with New Campus Director Appointment
+2025-11-12 16:09:47,034 - INFO - Uploading program 7/29: Women of WIFF: When Entrepreneurship Takes Centre Stage
+2025-11-12 16:09:48,158 - INFO - Uploading program 8/29: Crossing Borders, Building Futures: Reflections from the Downtown Detroit Partnership Fall Forum
+2025-11-12 16:09:49,360 - INFO - Uploading program 9/29: Windsor-Essex DevFest 2025 to Unite the Region’s Tech Community
+2025-11-12 16:09:50,485 - INFO - Uploading program 10/29: Downtown Detroit Partnership Hosts Fall Forum: Special Edition, featuring binational leaders across Detroit and Windsor, Oct. 15
+2025-11-12 16:09:51,656 - INFO - Uploading program 11/29: WEtech Alliance provides 12 companies with up to $240,000 through Cohort 4 of Government of Canada-funded i.d.e.a. Fund™
+2025-11-12 16:09:52,792 - INFO - Uploading program 12/29: Powering Sustainable Innovation: Handy Bros’ Journey with WEtech and the i.d.e.a. Fund™
+2025-11-12 16:09:53,957 - INFO - Uploading program 13/29: Annual Impact Report: April 2024 – March 2025
+2025-11-12 16:09:55,086 - INFO - Uploading program 14/29: A New Chapter of Growth and Innovation
+2025-11-12 16:09:56,267 - INFO - Uploading program 15/29: Welcoming New Leaders to WEtech Alliance’s Board for 2025–2026
+2025-11-12 16:09:57,369 - INFO - Uploading program 16/29: Scaling Up, Together
+2025-11-12 16:09:58,452 - INFO - Uploading program 17/29: BIZconneCKt | November Networking event
+2025-11-12 16:09:59,591 - INFO - Uploading program 18/29: Leamington Business After Hours with Frank Abbruzzese
+2025-11-12 16:10:02,666 - INFO - Uploading program 19/29: Unlock Growth & Productivity for Manufacturers
+2025-11-12 16:10:05,817 - INFO - Uploading program 20/29: Inclusive by Design Virtual Workshop
+2025-11-12 16:10:06,948 - INFO - Uploading program 21/29: Building AI Capacity: Overcoming Barriers to Address SME Skills Shortages
+2025-11-12 16:10:08,015 - INFO - Uploading program 22/29: The Windsor Essex Chamber of Commerce Welcomes Plantscape Windsor as New Affinity Partner
+2025-11-12 16:10:09,241 - INFO - Uploading program 23/29: The Windsor Essex Chamber of Commerce Welcomes Avis as New Affinity Partner
+2025-11-12 16:10:10,451 - INFO - Uploading program 24/29: 2025 Business Excellence Awards – Award Recipients
+2025-11-12 16:10:11,602 - INFO - Uploading program 25/29: Contact
+2025-11-12 16:10:12,747 - INFO - Uploading program 26/29: What I Learned Building My Own AI Agent: An Evening with Doug Sartori
+2025-11-12 16:10:13,918 - INFO - Uploading program 27/29: Don't miss our industry updates!
+2025-11-12 16:10:15,071 - INFO - Uploading program 28/29: Become An Angel
+2025-11-12 16:10:16,194 - INFO - Uploading program 29/29: Capital
+2025-11-12 16:10:16,865 - INFO - Upload Statistics:
+2025-11-12 16:10:16,865 - INFO -   Total: 29
+2025-11-12 16:10:16,866 - INFO -   Success: 29
+2025-11-12 16:10:16,866 - INFO -   Failed: 0
+2025-11-12 16:10:16,866 - INFO -   Skipped: 0
+2025-11-12 16:10:16,866 - INFO - ✅ Upload complete. 29/29 programs uploaded

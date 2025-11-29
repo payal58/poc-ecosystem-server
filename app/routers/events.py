@@ -4,6 +4,9 @@ from sqlalchemy import or_
 from typing import List, Optional
 from datetime import date
 import httpx
+import requests
+import cloudscraper
+import asyncio
 from app.database import get_db
 from app.models import Event
 from app.schemas import EventCreate, EventUpdate, EventResponse
@@ -94,20 +97,78 @@ async def delete_event(event_id: int, db: Session = Depends(get_db)):
 async def fetch_external_events():
     """Fetch events from external API (webusinesscentre.com)"""
     try:
-        # Get today's date
-        today = date.today().isoformat()
+        # Get today's date and format for API (YYYY-MM-DD)
+        today = date.today()
+        today_str = today.isoformat()
         
-        # Construct the API URL
+        # Construct the API URL - fetch events from today onwards
         url = (
             f"https://www.webusinesscentre.com/wp-json/tribe/events/v1/events/"
-            f"?page=1&per_page=1000&start_date={today}+00:00:00&status=publish"
+            f"?page=1&per_page=1000&start_date={today_str}+00:00:00&status=publish"
         )
         
-        # Fetch from external API
-        async with httpx.AsyncClient(timeout=30.0) as client:
-            response = await client.get(url)
+        # Fetch from external API - use cloudscraper to bypass Cloudflare protection
+        # Run sync cloudscraper in thread pool since endpoint is async
+        def fetch_with_cloudscraper():
+            try:
+                # Create a cloudscraper session (handles Cloudflare challenges)
+                scraper = cloudscraper.create_scraper(
+                    browser={
+                        'browser': 'chrome',
+                        'platform': 'darwin',
+                        'desktop': True
+                    }
+                )
+                response = scraper.get(url, timeout=30)
+                return response
+            except Exception as e:
+                print(f"Cloudscraper failed: {str(e)}")
+                return None
+        
+        # Run cloudscraper in executor
+        loop = asyncio.get_event_loop()
+        response = await loop.run_in_executor(None, fetch_with_cloudscraper)
+        
+        if response is None or response.status_code != 200:
+            # Fallback to regular requests
+            def fetch_with_requests():
+                try:
+                    session = requests.Session()
+                    headers = {
+                        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                        "Accept": "application/json, text/plain, */*",
+                        "Accept-Language": "en-US,en;q=0.9",
+                        "Referer": "https://www.webusinesscentre.com/",
+                    }
+                    session.headers.update(headers)
+                    return session.get(url, timeout=30, allow_redirects=True)
+                except Exception as e:
+                    print(f"Requests fallback failed: {str(e)}")
+                    return None
+            
+            response = await loop.run_in_executor(None, fetch_with_requests)
+        
+        if response is None:
+            return {
+                "events": [],
+                "count": 0,
+                "source": "webusinesscentre.com",
+                "error": "API access temporarily unavailable due to security restrictions"
+            }
+        
+        if response.status_code == 403:
+            print("Warning: External API is blocking requests (403 Forbidden).")
+            return {
+                "events": [],
+                "count": 0,
+                "source": "webusinesscentre.com",
+                "error": "API access temporarily unavailable due to security restrictions"
+            }
+        
+        if response.status_code != 200:
             response.raise_for_status()
-            data = response.json()
+        
+        data = response.json()
         
         # Transform external events to match our EventResponse schema
         external_events = []

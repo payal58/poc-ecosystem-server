@@ -3,7 +3,7 @@ Seed script to populate database with demo data
 Run this after migrations: python seed_data.py
 """
 from app.database import SessionLocal, engine, Base
-from app.models import Event, Organization, Pathway, SearchLog
+from app.models import Event, Organization, Pathway, SearchLog, Program
 from datetime import date, datetime, timedelta
 import random
 
@@ -16,6 +16,7 @@ try:
     # Clear existing data (optional - comment out if you want to keep existing data)
     db.query(SearchLog).delete()
     db.query(Pathway).delete()
+    db.query(Program).delete()
     db.query(Event).delete()
     db.query(Organization).delete()
     db.commit()
@@ -760,13 +761,284 @@ try:
     for pathway in pathways:
         db.add(pathway)
     
-    db.commit()
+    db.commit()  # Commit pathways to get IDs
     
-    total_items = len(events) + len(organizations) + len(pathways)
+    # Get organization IDs for programs (assuming organizations were created)
+    org_list = db.query(Organization).all()
+    if not org_list:
+        print("⚠️  Warning: No organizations found. Programs will not be created.")
+    else:
+        # Seed Programs (15 programs)
+        programs = [
+            Program(
+                title="Startup Accelerator Program",
+                description="A 12-week intensive accelerator program for early-stage tech startups. Includes mentorship, funding opportunities, and access to investor network.",
+                organization_id=org_list[1].id if len(org_list) > 1 else org_list[0].id,  # TechStart Windsor
+                program_type="accelerator",
+                stage="startup",
+                sector="Technology",
+                eligibility_criteria={"pre-revenue": True, "tech-focused": True},
+                cost="Equity-based",
+                duration="12 weeks",
+                application_deadline=today + timedelta(days=30),
+                start_date=today + timedelta(days=60),
+                website="https://example.com/accelerator",
+                application_link="https://example.com/accelerator/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Women Entrepreneurs Mentorship Program",
+                description="6-month mentorship program pairing women entrepreneurs with experienced business leaders. Includes monthly workshops and networking events.",
+                organization_id=org_list[11].id if len(org_list) > 11 else org_list[0].id,  # Women Entrepreneurs Windsor
+                program_type="mentorship",
+                stage="idea",
+                sector="All",
+                eligibility_criteria={"women-led": True, "pre-revenue": True},
+                cost="Free",
+                duration="6 months",
+                application_deadline=today + timedelta(days=20),
+                start_date=today + timedelta(days=45),
+                website="https://example.com/women-mentorship",
+                application_link="https://example.com/women-mentorship/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Student Entrepreneurship Incubator",
+                description="Year-round incubator program for university and college students. Provides workspace, mentorship, and seed funding for student startups.",
+                organization_id=org_list[3].id if len(org_list) > 3 else org_list[0].id,  # University of Windsor
+                program_type="incubator",
+                stage="idea",
+                sector="All",
+                eligibility_criteria={"student": True, "enrolled": True},
+                cost="Free",
+                duration="1 year",
+                application_deadline=today + timedelta(days=45),
+                start_date=today + timedelta(days=90),
+                website="https://example.com/student-incubator",
+                application_link="https://example.com/student-incubator/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="HealthTech Innovation Lab",
+                description="Specialized program for health technology startups. Includes clinical partnerships, regulatory guidance, and access to healthcare networks.",
+                organization_id=org_list[16].id if len(org_list) > 16 else org_list[0].id,  # HealthTech Accelerator
+                program_type="accelerator",
+                stage="startup",
+                sector="Healthcare",
+                eligibility_criteria={"healthtech": True, "early-stage": True},
+                cost="Equity-based",
+                duration="16 weeks",
+                application_deadline=today + timedelta(days=25),
+                start_date=today + timedelta(days=70),
+                website="https://example.com/healthtech-lab",
+                application_link="https://example.com/healthtech-lab/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Export Readiness Training",
+                description="Comprehensive 8-week program preparing businesses for international expansion. Covers market research, export regulations, and trade strategies.",
+                organization_id=org_list[18].id if len(org_list) > 18 else org_list[0].id,  # Export Development Office
+                program_type="workshop",
+                stage="growth",
+                sector="All",
+                eligibility_criteria={"established": True, "export-ready": True},
+                cost="Sliding scale",
+                duration="8 weeks",
+                application_deadline=today + timedelta(days=40),
+                start_date=today + timedelta(days=80),
+                website="https://example.com/export-training",
+                application_link="https://example.com/export-training/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="GreenTech Startup Challenge",
+                description="Competition and accelerator program for green technology startups. Winners receive funding, mentorship, and access to sustainability networks.",
+                organization_id=org_list[7].id if len(org_list) > 7 else org_list[0].id,  # GreenTech Ventures
+                program_type="accelerator",
+                stage="idea",
+                sector="GreenTech",
+                eligibility_criteria={"greentech": True, "sustainable": True},
+                cost="Free (competition)",
+                duration="10 weeks",
+                application_deadline=today + timedelta(days=15),
+                start_date=today + timedelta(days=50),
+                website="https://example.com/greentech-challenge",
+                application_link="https://example.com/greentech-challenge/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Food Innovation Kitchen Access",
+                description="Program providing access to commercial kitchen facilities, food safety training, and regulatory guidance for food and beverage startups.",
+                organization_id=org_list[15].id if len(org_list) > 15 else org_list[0].id,  # Food Innovation Centre
+                program_type="incubator",
+                stage="startup",
+                sector="Food & Beverage",
+                eligibility_criteria={"food-business": True},
+                cost="Monthly fee",
+                duration="Ongoing",
+                application_deadline=None,
+                start_date=None,
+                website="https://example.com/food-kitchen",
+                application_link="https://example.com/food-kitchen/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="Youth Entrepreneurship Bootcamp",
+                description="Intensive 2-week bootcamp for young entrepreneurs aged 16-30. Covers ideation, business planning, and pitch preparation.",
+                organization_id=org_list[17].id if len(org_list) > 17 else org_list[0].id,  # Youth Entrepreneurship Program
+                program_type="workshop",
+                stage="idea",
+                sector="All",
+                eligibility_criteria={"age": "16-30", "youth": True},
+                cost="Free",
+                duration="2 weeks",
+                application_deadline=today + timedelta(days=35),
+                start_date=today + timedelta(days=75),
+                website="https://example.com/youth-bootcamp",
+                application_link="https://example.com/youth-bootcamp/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Manufacturing Innovation Program",
+                description="Program supporting manufacturing startups with access to specialized equipment, industry expertise, and supply chain connections.",
+                organization_id=org_list[13].id if len(org_list) > 13 else org_list[0].id,  # Manufacturing Innovation Hub
+                program_type="incubator",
+                stage="startup",
+                sector="Manufacturing",
+                eligibility_criteria={"manufacturing": True},
+                cost="Membership-based",
+                duration="6 months",
+                application_deadline=today + timedelta(days=50),
+                start_date=today + timedelta(days=100),
+                website="https://example.com/manufacturing-program",
+                application_link="https://example.com/manufacturing-program/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="Digital Media Creator Space",
+                description="Co-working and incubation program for digital media creators, content creators, and creative tech startups.",
+                organization_id=org_list[14].id if len(org_list) > 14 else org_list[0].id,  # Digital Media Lab
+                program_type="incubator",
+                stage="idea",
+                sector="Digital Media",
+                eligibility_criteria={"creative": True, "media-focused": True},
+                cost="Sliding scale",
+                duration="Ongoing",
+                application_deadline=None,
+                start_date=None,
+                website="https://example.com/digital-media-space",
+                application_link="https://example.com/digital-media-space/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="Angel Investor Network Membership",
+                description="Exclusive membership program connecting entrepreneurs with angel investors. Includes pitch events, investor meetings, and deal flow access.",
+                organization_id=org_list[11].id if len(org_list) > 11 else org_list[0].id,  # Angel Network
+                program_type="network",
+                stage="startup",
+                sector="All",
+                eligibility_criteria={"fundraising": True, "investor-ready": True},
+                cost="Membership fee",
+                duration="Annual",
+                application_deadline=None,
+                start_date=None,
+                website="https://example.com/angel-network",
+                application_link="https://example.com/angel-network/apply",
+                is_verified=True,
+                is_active=True
+            ),
+            Program(
+                title="Business Model Validation Workshop",
+                description="4-week intensive workshop helping entrepreneurs validate their business models through customer discovery and market testing.",
+                organization_id=org_list[8].id if len(org_list) > 8 else org_list[0].id,  # Startup Foundry
+                program_type="workshop",
+                stage="idea",
+                sector="All",
+                eligibility_criteria={"pre-revenue": True},
+                cost="Free",
+                duration="4 weeks",
+                application_deadline=today + timedelta(days=10),
+                start_date=today + timedelta(days=30),
+                website="https://example.com/business-validation",
+                application_link="https://example.com/business-validation/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="TechBridge Professional Development",
+                description="Ongoing professional development program for tech professionals. Includes workshops, networking, and career advancement resources.",
+                organization_id=org_list[10].id if len(org_list) > 10 else org_list[0].id,  # TechBridge Windsor
+                program_type="workshop",
+                stage="growth",
+                sector="Technology",
+                eligibility_criteria={"tech-professional": True},
+                cost="Membership-based",
+                duration="Ongoing",
+                application_deadline=None,
+                start_date=None,
+                website="https://example.com/techbridge-professional",
+                application_link="https://example.com/techbridge-professional/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="Co-working Space Membership",
+                description="Flexible co-working space membership with access to meeting rooms, networking events, and business support services.",
+                organization_id=org_list[19].id if len(org_list) > 19 else org_list[0].id,  # Co-working Collective
+                program_type="workspace",
+                stage="All",
+                sector="All",
+                eligibility_criteria={},
+                cost="Monthly fee",
+                duration="Flexible",
+                application_deadline=None,
+                start_date=None,
+                website="https://example.com/coworking-membership",
+                application_link="https://example.com/coworking-membership/apply",
+                is_verified=False,
+                is_active=True
+            ),
+            Program(
+                title="Innovation Zone Verified Program",
+                description="Certification program for programs aligned with Innovation Zone goals. Provides verified status and increased visibility.",
+                organization_id=org_list[0].id if len(org_list) > 0 else org_list[0].id,  # Innovation Hub
+                program_type="certification",
+                stage="All",
+                sector="All",
+                eligibility_criteria={"aligned": True, "quality": True},
+                cost="Application fee",
+                duration="Annual review",
+                application_deadline=today + timedelta(days=60),
+                start_date=None,
+                website="https://example.com/verified-program",
+                application_link="https://example.com/verified-program/apply",
+                is_verified=True,
+                is_active=True
+            ),
+        ]
+        
+        for program in programs:
+            db.add(program)
+        
+        db.commit()
+    
+    total_items = len(events) + len(organizations) + len(pathways) + (len(programs) if org_list else 0)
     print("✅ Database seeded successfully!")
     print(f"   - {len(events)} events")
     print(f"   - {len(organizations)} organizations")
     print(f"   - {len(pathways)} pathways")
+    if org_list:
+        print(f"   - {len(programs)} programs")
     print(f"   - Total: {total_items} items")
 
 except Exception as e:
